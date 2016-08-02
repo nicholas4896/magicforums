@@ -146,15 +146,14 @@ hi{
   height: 180px;
 }
 
-hp{
+.hp{
   color: black;
   font-size: 28px
 }
 .contact {
-  background-color: salmon ;
-  height: 250px;
+  background-color: pink ;
+  height: auto;
   width: 100%;
-  display: flex;
   justify-content: center;
 
 }
