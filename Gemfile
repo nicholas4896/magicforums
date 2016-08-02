@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'devise'
 gem 'bootstrap-sass'
+gem "font-awesome-rails"
+
 group :production do
   gem 'rails_12factor'
 end
