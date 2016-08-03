@@ -1,0 +1,70 @@
+.about {
+
+  .aboutbackground {
+    background-image: asset-url("flower.jpg");
+    height: calc(100vh - 40px);
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    }
+
+    h1 {
+      color: red;
+      font-family: monospace;
+      font-size: 90px;
+    }
+
+    .abouttext {
+      font-size: 30px;
+      color: salmon;
+      width: 100%;
+      justify-content: center;
+      height: 260px;
+      background-color: white;
+    }
+
+    .aboutus {
+      font-size: 50px;
+      justify-content: center;
+    }
+
+    .short-underline {
+      width: auto;
+      border-bottom: 2px solid salmon;
+    }
+
+    .aboutimg-container {
+      max-width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px auto;
+      justify-content: space-around;
+    }
+
+    .aboutimg {
+      height: 300px;
+      flex: 0 0 25%;
+      position: relative;
+      font-size: 30px;
+      color: black;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 50px auto;
+        justify-content: center;;
+    }
+
+    .feature {
+      flex: 0 0;
+      margin: 20px 10px;
+    }
+
+}

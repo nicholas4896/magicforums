@@ -1,164 +1,166 @@
-@import "font-awesome";
-
-.background {
-  background-image: asset-url("flower.jpg");
-  height: calc(100vh - 52px);
-  width: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.background2 {
-  background-image: asset-url("grass.jpg");
-  height: calc(100vh - 52px);
-  width: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.background3 {
-  background-color: orange;
-  height: calc(100vh - 52px);
-  width: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-h1{
-  color: red;
-  font-family: monospace;
-  font-size: 90px;
-}
-h2{
-  color: green;
-  font-family: serif;
-  font-size: 100px;
-}
-hh{
-  color: blue;
-  font-family: inherit;
-  font-size: 99px;
-}
-h3{
-  color: blue;
-  font-size: 40px;
-}
-h4{
-  color: yellow;
-  font-size: 20px;
-}
-h5{
-  color: purple;
-  font-family: fantasy;
-  font-size: 25px;
-}
-h6{
-  color: maroon;
-  font-size: 30px;
-}
-.features-container {
-  background-color: gray;
-}
-.features {
+.landing{
+  .background {
+    background-image: asset-url("flower.jpg");
+    height: calc(100vh - 52px);
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 50px auto;
+    align-items: center;
     justify-content: center;
   }
+
+  .background2 {
+    background-image: asset-url("grass.jpg");
+    height: calc(100vh - 52px);
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .background3 {
+    background-color: orange;
+    height: calc(100vh - 52px);
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    color: red;
+    font-family: monospace;
+    font-size: 90px;
+  }
+
+  h2 {
+    color: green;
+    font-size: 40px;
+  }
+
+  h3 {
+    color: black;
+    font-family: fantasy;
+    font-size: 25px;
+  }
+
+  .features-container {
+    background-color: gray;
+  }
+
+  .features {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 50px auto;
+      justify-content: center;
+  }
+
   .feature {
     flex: 0 0 280px;
     margin: 20px 10px;
   }
+
   .feature1 {
     flex: 0 0 280px;
     margin: 20px 10px;
   }
+
   .icon-settings {
-    margin: 20px 0
+    margin: 20px 0;
   }
-@media all and (max-width: 1199px) {
-.features {
-  max-width: 600px;
-}
-}
-.photo-container {
-  max-width: 1199px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px auto;
-  justify-content: space-around;
-}
-.photo-box {
-  width: 280px;
-  position: relative;
-}
-.content1:hover .invinsible-layout{
-  opacity: 1;
-  transition: all 2s ease-in-out;
-}
-.photo-box:hover .invinsible-layout{
-  opacity: 1;
-  transition: all 0.5s ease-in-out;
-}
-hi{
-  font-size: 40px;
-}
-.invinsible-layout{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-}
-.sexybox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-color: yellow;
-  color: green;
-  opacity: 0.5;
-}
-.unsexybox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-color: red;
-  opacity: 0.4;
-}
 
-.img-settings{
-  width: 100%;
-  height: 180px;
-}
+  .photo-container {
+    max-width: 1199px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: space-around;
+  }
 
-.hp{
-  color: black;
-  font-size: 28px
-}
-.contact {
-  background-color: pink ;
-  height: auto;
-  width: 100%;
-  justify-content: center;
+  .photo-box {
+    width: 280px;
+    flex: 0 0 25%;
+    position: relative;
+  }
 
-}
+  .content1:hover .invinsible-layout{
+    opacity: 1;
+    transition: all 2s ease-in-out;
+  }
 
-.short-underline {
-  width: 200px;
-  border-bottom: 2px solid orange;
+  .photo-box:hover .invinsible-layout{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+  hi {
+    font-size: 40px;
+  }
+
+  .invinsible-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .sexybox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: yellow;
+    color: green;
+    opacity: 0.5;
+  }
+
+  .unsexybox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: red;
+    opacity: 0.4;
+  }
+
+  .img-settings {
+    width: 100%;
+    height: 180px;
+  }
+
+  .hp {
+    color: black;
+    font-size: 28px
+  }
+
+  .contact {
+    background-color: pink ;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .short-underline {
+    width: 200px;
+    border-bottom: 2px solid orange;
+  }
+
+  @media all and (max-width: 1199px) {
+    .features {
+      max-width: 600px;
+    }
+  }
 }
