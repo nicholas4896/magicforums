@@ -1,30 +1,14 @@
-<div class="topic-container text-center">
-  <h1 class="text-center"> Topics </h1>
-
-<div class="topic-parent">
-  <% @topics.each do |topic| %>
-      <div class="topic-child text-center">
-      <h3><%= topic.title %></h3>
-      <h5><%= topic.description %></h5>
-      <%= link_to topic.title, topic_path(topic) %>
-    </div>
-  <% end %>
-  </div>
-</div>
-
 <%= form_for(@topic, url: topics_path, html: { id: "topic-create-form" }) do |f| %>
   <h1 class="text-center">
-    New Topic?
+    Create Topic
   </h1>
 
-  <br>
-
-  <div class="form-group text-center">
+  <div class="form-group">
     <h4> <%= f.label :title_field, "Sexy Title" %> </h4>
     <%= f.text_field :title, required: true, id: "topic_title_field", class: 'form-control' %>
   </div>
 
-  <div class="form-group text-center">
+  <div class="form-group">
     <h4> <%= f.label :text_field, "Description" %> </h4>
     <%= f.text_field :description, id: "topic_description_field", class: 'form-control' %>
   </div>
@@ -33,5 +17,3 @@
     <%= f.submit "Create Topic", class: "btn btn-success btn-lg" %>
   </div>
 <% end %>
-
-<a class="button" href="/topics/new">New Post</a>

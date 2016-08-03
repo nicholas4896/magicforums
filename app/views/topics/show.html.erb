@@ -1,0 +1,10 @@
+<h1><%= @topic.title %></h1>
+
+<p><%= @topic.description %></p>
+
+<br>
+
+<div class="deleteedit">
+  <%= link_to "Delete", topic_path(@topic), method: :delete, data: { confirm: "Why Do You Hate America?" } %>
+
+</div>

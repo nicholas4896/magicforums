@@ -59,12 +59,17 @@
         flex-wrap: wrap;
         max-width: 800px;
         margin: 50px auto;
-        justify-content: center;;
+        justify-content: center;
     }
 
     .feature {
       flex: 0 0;
-      margin: 20px 10px;
+      margin: 40px;
+    }
+
+    .topics{
+      font-size: 20px;
+      color: currentColor;
     }
 
 }
