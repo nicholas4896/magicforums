@@ -4,7 +4,6 @@
 
 <br>
 
-<div class="deleteedit">
   <%= link_to "Delete", topic_path(@topic), method: :delete, data: { confirm: "Why Do You Hate America?" } %>
 
-</div>
+  <%= link_to "edit", edit_topic_path(@topic), data: { confirm: "Really?" } %>
