@@ -4,8 +4,8 @@
 <div class="topic-parent">
   <% @topics.each do |topic| %>
       <div class="topic-child text-center">
-      <h3><%= topic.title %></h3>
-      <h5><%= topic.description %></h5>
+      <h2><%= topic.title %></h2>
+      <h4><%= topic.description %></h4>
       <%= link_to topic.title, topic_path(topic) %>
     </div>
   <% end %>
