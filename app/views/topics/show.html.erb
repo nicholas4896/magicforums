@@ -1,9 +1,17 @@
+
+
 <h1><%= @topic.title %></h1>
 
 <p><%= @topic.description %></p>
 
 <br>
 
-  <%= link_to "Delete", topic_path(@topic), method: :delete, data: { confirm: "Why Do You Hate America?" } %>
 
-  <%= link_to "edit", edit_topic_path(@topic), data: { confirm: "Really?" } %>
+<section class="actions-parent">
+  <div class="actions-child">
+    <%= link_to "Delete", topic_path(@topic), method: :delete, data: { confirm: "Why Do You Hate America?" } %>
+      <br>
+    <%= link_to "Edit", edit_topic_path(@topic), data: { confirm: "Really?" } %>
+  </div>
+
+</section>
