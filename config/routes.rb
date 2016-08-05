@@ -4,11 +4,13 @@ Rails.application.routes.draw do
 
 get :about, to: 'static_pages#about'
 
-resources :topics
+resources :topics do
+  resources :posts
+end
 
 #get :topics, to: 'topics#index'
 
-resources :posts
+#resources :posts
 
 #get :posts, to: 'posts#index'
 

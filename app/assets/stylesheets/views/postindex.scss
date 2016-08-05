@@ -1,17 +1,16 @@
-.topic-container {
+.post-container {
 
   color: blue;
   font-family: fantasy;
 
-.topic-parent {
+.post-parent {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
-
 }
 
-.topic-child {
+.post-child {
   flex: 0 0 250px;
   padding: 10px;
   margin: 10px;
@@ -19,8 +18,8 @@
   font: 50px;
 }
 
+.newpost {
+  font-family: fantasy;
 }
 
-.newtopic {
-  font-family: fantasy;
 }

@@ -6,35 +6,11 @@
       <div class="topic-child text-center">
       <h2><%= topic.title %></h2>
       <h4><%= topic.description %></h4>
-      <%= link_to topic.title, topic_path(topic) %>
+      <%= link_to topic.title, topic_posts_path(topic)%>
     </div>
   <% end %>
   </div>
 
+<%= button_to "Create Topic", new_topic_path, :method => :get %>
+
 </div>
-
-<section class="newtopic">
-
-<%= form_for(@topic, url: topics_path, html: { id: "topic-create-form" }) do |f| %>
-  <h1 class="text-center">
-    New Topic?
-  </h1>
-
-  <br>
-
-  <div class="form-group text-center">
-    <h4> <%= f.label :title_field, "Sexy Title" %> </h4>
-    <%= f.text_field :title, required: true, id: "topic_title_field", class: 'form-control' %>
-  </div>
-
-  <div class="form-group text-center">
-    <h4> <%= f.label :text_field, "Description" %> </h4>
-    <%= f.text_field :description, id: "topic_description_field", class: 'form-control' %>
-  </div>
-
-  <div class="form-group text-center">
-    <%= f.submit "Create Topic", class: "btn btn-success btn-lg" %>
-  </div>
-<% end %>
-
-</section>
