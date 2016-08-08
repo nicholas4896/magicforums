@@ -1,5 +1,6 @@
 <div class="topic-container text-center">
   <h1 class="text-center"> Topics </h1>
+    <hr class="short-underline">
 
 <div class="topic-parent">
   <% @topics.each do |topic| %>
@@ -12,5 +13,4 @@
   </div>
 
 <%= button_to "Create Topic", new_topic_path, :method => :get %>
-
-</div>
+<br>

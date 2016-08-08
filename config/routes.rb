@@ -4,8 +4,10 @@ Rails.application.routes.draw do
 
 get :about, to: 'static_pages#about'
 
-resources :topics do
-  resources :posts
+resources :topics, except: [:show] do
+  resources :posts, except: [:show] do
+    resources :comments, except: [:show]
+  end
 end
 
 #get :topics, to: 'topics#index'

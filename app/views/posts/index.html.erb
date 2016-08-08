@@ -1,25 +1,33 @@
-<div class="post-container text-center">
+  <div class="post-container text-center">
   <h1 class="text-center" /h1><%= @topic.title%>
-    <%= button_to "Edit Topic", edit_topic_path(@topic), :method => :get %>
-    <br>
-    <%= button_to "Delete Topic", topic_path(@topic), method: :delete, data: { confirm: "Delete?" } %>
+    <hr class="short-underline">
 
     <h1>Posts</h1>
+    <hr class="short-underline">
   </div>
 
 <div class="post-parent">
   <% @posts.each do |post| %>
-      <div class="post-child text-center">
+      <div class="post-child text-center" >
       <h2><%= post.title %></h2>
       <h4><%= post.body %></h4>
-    <%= link_to post.title, '#' %>
-  </div>
+    <%= link_to post.title, topic_post_comments_path(@topic, post) %>
+    <%= button_to "Edit Post", edit_topic_post_path(@topic, post) %>
+    <%= link_to ('Delete Post'), topic_post_path(@topic, post), method: :delete, data: { confirm: "Delete Post?"}, :class => 'btn btn-primary btn-;g'%>
+    </div>
 <% end %>
 
 </div>
 
 <br>
 
-<%= button_to "Create Post", new_topic_post_path, :method => :get %>
-<br>
-<br>
+<div class="text-center">
+  <br>
+  <%= button_to "Create Post", new_topic_post_path, :method => :get %>
+  <br>
+  <%= button_to "Back to Topics", topics_path, :method => :get %>
+  <br>
+  <%= button_to "Edit Topic", edit_topic_path(@topic), :method => :get %>
+  <br>
+  <%= button_to "Delete Topic", topic_path(@topic), method: :delete, data: { confirm: "Delete?" } %>
+</div>

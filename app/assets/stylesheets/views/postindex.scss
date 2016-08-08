@@ -5,13 +5,14 @@
 
 .post-parent {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: center;
   flex-wrap: wrap;
   padding: 20px;
 }
 
 .post-child {
-  flex: 0 0 250px;
+  flex: 0 0 150px;
   padding: 10px;
   margin: 10px;
   border: 2px solid red;
