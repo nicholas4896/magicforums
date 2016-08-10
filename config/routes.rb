@@ -10,6 +10,8 @@ resources :topics, except: [:show] do
   end
 end
 
+resources :users, only: [:new, :edit, :create, :update]
+
 #get :topics, to: 'topics#index'
 
 #resources :posts
