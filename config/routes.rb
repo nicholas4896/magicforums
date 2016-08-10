@@ -12,6 +12,8 @@ end
 
 resources :users, only: [:new, :edit, :create, :update]
 
+resources :sessions, only: [:new, :create, :destroy]
+
 #get :topics, to: 'topics#index'
 
 #resources :posts

@@ -1,5 +1,8 @@
 class TopicsController < ApplicationController
 
+  before_action :authenticate!, only: [:create, :edit, :update, :new, :destroy]
+
+
   def index
     @topics = Topic.all.order(created_at: :desc)
     @topic =Topic.new
@@ -35,7 +38,7 @@ class TopicsController < ApplicationController
       redirect_to topic_posts_path(@topic)
     else
       flash[:danger] = @topic.errors.full_messages
-      
+
       redirect_to edit_topic_path(@topic)
     end
   end
