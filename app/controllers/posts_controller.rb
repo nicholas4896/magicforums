@@ -32,9 +32,9 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
 
     if @post.update(post_params)
-      redirect_to topic_posts_path(@topic)
+      redirect_to topic_posts_path(@topic, @post)
     else
-      redirect_to edit_topic_post _path(@post)
+      render :edit
     end
   end
 
