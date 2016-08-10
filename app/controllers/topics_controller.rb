@@ -30,7 +30,7 @@ class TopicsController < ApplicationController
   end
 
   def update
-    @topic = Topic.find_by(id: params[:id])
+    @topic = topic.find_by(id: params[:id])
 
     if @topic.update(topic_params)
       flash[:success] = "You've updated the topic."

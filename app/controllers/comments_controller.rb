@@ -17,7 +17,7 @@ class CommentsController < ApplicationController
   def create
     @topic = Topic.find_by(id: params[:topic_id])
     @post = @topic.posts.find_by(id: params[:post_id])
-    @comment = current_user.comments.build(comment_params.merge(post_id: params[:post_id]))
+    @comment = current_user.comments.build  (comment_params.merge(post_id: params[:post_id]))
 
     if @comment.save
       flash[:success] = "You've created a new comment."
