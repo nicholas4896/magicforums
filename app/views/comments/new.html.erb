@@ -3,6 +3,10 @@
     Create Comment
   </h1>
 
+<div class="form-group">
+  <%= f.file_field :image, id: "comment_image_field", class: 'form-control image-uploader' %>
+</div>
+
   <div class="form-group">
     <h4> <%= f.label :text_field, "Comment" %> </h4>
     <%= f.text_field :body, id: "comment_body_field", class: 'form-control' %>

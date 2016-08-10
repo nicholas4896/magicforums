@@ -5,6 +5,7 @@
 <div class="topic-parent">
   <% @topics.each do |topic| %>
       <div class="topic-child text-center">
+      <%= image_tag topic.image, class: "img-settings img-responsive center-block" %>
       <h2><%= topic.title %></h2>
       <h4><%= topic.description %></h4>
       <%= link_to topic.title, topic_posts_path(topic)%>
