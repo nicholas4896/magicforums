@@ -44,11 +44,11 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment = Comment.find_by(id: params[:id])
-    @post = Post.find_by(id: params[:id])
+    @post = @comment.post
     @topic = @post.topic
 
     if @comment.destroy
-      redirect_to topic_post_comments_path(@comment)
+      redirect_to topic_post_comments_path
     end
   end
 
