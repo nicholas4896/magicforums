@@ -18,9 +18,13 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params.merge(post_id: params[:post_id]))
 
     if @comment.save
+      flash[:success] = "You've created a new comment."
+
       redirect_to topic_post_comments_path(@topic, @post)
     else
-      render new_topic_post_comment_path
+      flash[:danger] = @comment.errors.full_messages
+
+      redirect_to topic_post_comments_path
     end
   end
 
@@ -36,8 +40,12 @@ class CommentsController < ApplicationController
     @topic = @post.topic
 
     if @comment.update(comment_params)
+      flash[:success] = "You've updated the comment."
+
       redirect_to topic_post_comments_path
     else
+      flash[:danger] = @comment.errors.full_messages
+
       redirect_to edit_topic_post_comment_path(@comment)
     end
   end

@@ -14,8 +14,10 @@ class TopicsController < ApplicationController
     @topic = Topic.new(topic_params)
 
     if @topic.save
+      flash[:success] = "You've created a new topic."
       redirect_to topics_path
     else
+      flash[:danger] = @topic.errors.full_messages
       render new_topic_path
     end
   end
@@ -28,8 +30,12 @@ class TopicsController < ApplicationController
     @topic = Topic.find_by(id: params[:id])
 
     if @topic.update(topic_params)
+      flash[:success] = "You've updated the topic."
+
       redirect_to topic_posts_path(@topic)
     else
+      flash[:danger] = @topic.errors.full_messages
+      
       redirect_to edit_topic_path(@topic)
     end
   end
