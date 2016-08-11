@@ -4,15 +4,12 @@
 
   <% @comments.each do |comment| %>
     <%= image_tag comment.image, class: "img-settings img-responsive center-block" %>
+    <%= render partial: "partials/comment", locals: { comment: comment, post: @post, topic: @topic } %>
+  <%end%>
 
-    <h4><%= comment.body %><h4>
-      <%= button_to "Edit Comment", edit_topic_post_comment_path(@topic, @post, comment), :method => :get %>
-      <%= link_to ('Delete Comment'), topic_post_comment_path(@topic, @post, comment), method: :delete, data: { confirm: "Delete Comment?"}, :class => 'btn btn-primary btn-;g'%>
-    </div>
-  </div>
-<%end%>
+  <%= render partial: "partials/form", locals: { comment: @comment } %>
 
-<%= button_to "New Comment", new_topic_post_comment_path, :method => :get %>
-<br>
+</div>
+
 <br>
 <%= button_to "Back to Post", topic_posts_path, :method => :get %>

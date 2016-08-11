@@ -6,20 +6,14 @@ class CommentsController < ApplicationController
     @topic = Topic.includes(:posts).find_by(id: params[:topic_id])
     @post = @topic.posts.find_by(id: params[:post_id])
     @comments = @post.comments.order("created_at DESC")
-  end
-
-  def new
-    @topic = Topic.find_by(id: params[:topic_id])
-    @post = @topic.posts.find_by(id: params[:post_id])
     @comment = Comment.new
-    authorize @comment
-
   end
 
   def create
     @topic = Topic.find_by(id: params[:topic_id])
     @post = @topic.posts.find_by(id: params[:post_id])
     @comment = current_user.comments.build  (comment_params.merge(post_id: params[:post_id]))
+    authorize @comment
 
     if @comment.save
       flash[:success] = "You've created a new comment."
