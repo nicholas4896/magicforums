@@ -12,17 +12,13 @@ class CommentsController < ApplicationController
   def create
     @topic = Topic.find_by(id: params[:topic_id])
     @post = @topic.posts.find_by(id: params[:post_id])
-    @comment = current_user.comments.build  (comment_params.merge(post_id: params[:post_id]))
+    @comment = current_user.comments.build(comment_params.merge(post_id: params[:post_id]))
+    @new_comment = Comment.new
     authorize @comment
-
     if @comment.save
-      flash[:success] = "You've created a new comment."
-
-      redirect_to topic_post_comments_path(@topic, @post)
+      flash.now[:success] = "You've created a new comment."
     else
       flash[:danger] = @comment.errors.full_messages
-
-      redirect_to topic_post_comments_path
     end
   end
 
@@ -58,6 +54,7 @@ class CommentsController < ApplicationController
     authorize @comment
 
     if @comment.destroy
+      flash[:success] = "You've deleted the comment."
       redirect_to topic_post_comments_path
     end
   end
