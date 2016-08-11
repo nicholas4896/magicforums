@@ -31,6 +31,7 @@ gem 'bootstrap-sass'
 gem "font-awesome-rails"
 gem 'figaro'
 gem 'pundit'
+gem 'responders'
 
 group :production do
   gem 'rails_12factor'

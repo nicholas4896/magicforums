@@ -1,4 +1,4 @@
-class PostPolicy < ApplicationPolicy
+class CommentPolicy < ApplicationPolicy
 
   def new?
     user.present?
@@ -9,7 +9,7 @@ class PostPolicy < ApplicationPolicy
   end
 
   def edit?
-   user.present? && record.user == user || user_has_power?
+    user.present? && record.user == user || user_has_power?
   end
 
   def update?

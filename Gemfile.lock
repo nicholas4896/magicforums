@@ -214,6 +214,7 @@ DEPENDENCIES
   pundit
   rails (~> 5.0.0)
   rails_12factor
+  responders
   sass-rails (~> 5.0)
   turbolinks (~> 5)
   tzinfo-data
