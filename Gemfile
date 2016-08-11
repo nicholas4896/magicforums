@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
+gem 'figaro'
+gem 'pundit'
 
 group :production do
   gem 'rails_12factor'
@@ -42,6 +44,7 @@ group :development, :test do
 end
 
 group :development do
+    gem 'letter_opener'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
 end

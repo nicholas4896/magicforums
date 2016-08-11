@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :topics
   has_many :comments
 
+  enum role: [:user, :moderator, :admin]
 end
