@@ -15,6 +15,7 @@ class CommentsController < ApplicationController
     @comment = current_user.comments.build(comment_params.merge(post_id: params[:post_id]))
     @new_comment = Comment.new
     authorize @comment
+
     if @comment.save
       flash.now[:success] = "You've created a new comment."
     else

@@ -1,35 +1,27 @@
-  <div class="post-container text-center">
-  <h1 class="text-center" /h1><%= @topic.title%>
-    <hr class="short-underline">
+<div class="post-index-container text-center">
+    <h1 class="text-center" /h1><%= @topic.title%>
+      <hr class="short-underline">
+      <h1>Posts</h1>
+      <hr class="short-underline">
 
-    <h1>Posts</h1>
-    <hr class="short-underline">
-  </div>
-
-<div class="post-parent">
-  <% @posts.each do |post| %>
-      <div class="post-child text-center" >
-      <%= image_tag post.image, class: "img-settings img-responsive center-block" %>
-      <h2><%= post.title %></h2>
-      <h4><%= post.body %></h4>
-    <%= link_to post.title, topic_post_comments_path(@topic, post) %>
-    <br>
-    <%= link_to "Edit Post", edit_topic_post_path(@topic, post), :class =>"btn btn-default" %>
-    <%= link_to ('Delete Post'), topic_post_path(@topic, post), method: :delete, data: { confirm: "Delete Post?"}, :class => 'btn btn-primary btn-;g'%>
+    <div id="posts">
+      <% @posts.each do |post| %>
+      <%= render partial: "posts/post", locals: { post: post, topic: @topic } %>
+      <% end %>
     </div>
-<% end %>
+
+    <div class="post-form-container">
+      <%= render partial: "posts/post_form", locals: { post: @post } %>
+    </div>
 
 </div>
 
 <br>
-
-<div class="text-center">
-  <br>
-  <%= button_to "Create Post", new_topic_post_path, :method => :get %>
-  <br>
-  <%= button_to "Back to Topics", topics_path, :method => :get %>
-  <br>
-  <%= button_to "Edit Topic", edit_topic_path(@topic), :method => :get %>
-  <br>
-  <%= button_to "Delete Topic", topic_path(@topic), method: :delete, data: { confirm: "Delete?" } %>
-</div>
+  <div class="text-center">
+      <br>
+      <%= button_to "Back to Topics", topics_path, :method => :get %>
+      <br>
+      <%= button_to "Edit Topic", edit_topic_path(@topic), :method => :get %>
+      <br>
+      <%= button_to "Delete Topic", topic_path(@topic), method: :delete, data: { confirm: "Delete?" } %>
+  </div>

@@ -2,7 +2,14 @@
 
   <div class="background">
     <div class="content">
-    <h1><%= link_to current_user.username, edit_user_path(current_user) %></h1>
+      <% if current_user %>
+        <h1>Welcome <%= link_to current_user.username, edit_user_path(current_user) %></h1>
+
+      <% else %>
+        <h1> What's In a Name? </h1>
+
+      <% end %>
+
     </div>
   </div>
 

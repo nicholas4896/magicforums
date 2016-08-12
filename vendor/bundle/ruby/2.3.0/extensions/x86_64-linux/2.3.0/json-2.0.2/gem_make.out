@@ -1,0 +1,13 @@
+current directory: /home/nick4896/FSWD/magicforums/vendor/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+/usr/bin/ruby2.3 -r ./siteconf20160812-23371-a2yznn.rb extconf.rb
+creating Makefile
+
+current directory: /home/nick4896/FSWD/magicforums/vendor/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/nick4896/FSWD/magicforums/vendor/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/nick4896/FSWD/magicforums/vendor/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR=" install

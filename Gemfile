@@ -32,6 +32,8 @@ gem "font-awesome-rails"
 gem 'figaro'
 gem 'pundit'
 gem 'responders'
+gem 'remotipart', github: 'sr3d/remotipart'
+gem 'kaminari'
 
 group :production do
   gem 'rails_12factor'

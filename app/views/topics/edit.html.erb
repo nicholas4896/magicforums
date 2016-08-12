@@ -1,6 +1,6 @@
 <section class="topic-edit-container">
 
-<%= form_for(@topic, url: topic_path(@topic), html: { id: "topic-update-form" }) do |f| %>
+<%= form_for(@topic, url: topic_path(@topic), authenticity_token: true,  html: { id: "topic-update-form", multipart: true }) do |f| %>
   <h1 class="text-center">
     Edit Topic
   </h1>

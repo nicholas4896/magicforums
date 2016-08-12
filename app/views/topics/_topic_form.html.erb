@@ -1,0 +1,29 @@
+<div class="topic-form-container">
+
+  <%= form_for(topic, url: topics_path, authenticity_token: true, remote: true, html: { id: "topic-create-form", multipart: true }) do |f| %>
+    <h1 class="text-center">
+      Create Topic
+    </h1>
+
+    <div class="form-group">
+      <%= f.file_field :image, id: "topic_image_field", class: 'form-control image-uploader' %>
+    </div>
+
+    <br>
+
+    <div class="form-group text-center">
+      <h4> <%= f.label :title_field, "Sexy Title" %> </h4>
+      <%= f.text_field :title, required: true, id: "topic_title_field", class: 'form-control' %>
+    </div>
+
+    <div class="form-group text-center">
+      <h4> <%= f.label :text_field, "Description" %> </h4>
+      <%= f.text_field :description, id: "topic_description_field", class: 'form-control' %>
+    </div>
+
+    <div class="form-group text-center">
+      <%= f.submit "Create Topic", class: "btn btn-success btn-lg" %>
+    </div>
+  <% end %>
+
+</div>

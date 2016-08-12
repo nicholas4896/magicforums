@@ -1,7 +1,6 @@
 <div class="comment-index-container text-center">
-    <h1>
-      Comments
-    </h1>
+    <h1>Comments</h1>
+
     <div id="comments">
       <% @comments.each do |comment| %>
         <%= render partial: "comments/comment", locals: { comment: comment, post: @post, topic: @topic } %>
@@ -11,7 +10,7 @@
     <div class="form-container">
       <%= render partial: "comments/form", locals: { comment: @comment, post: @post } %>
     </div>
-
-    <br>
-    <%= button_to "Back to Post", topic_posts_path, :method => :get %>
 </div>
+
+<br>
+<%= button_to "Back to Post", topic_posts_path, :method => :get %>

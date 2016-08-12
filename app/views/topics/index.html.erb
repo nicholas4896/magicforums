@@ -1,17 +1,16 @@
 <div class="topic-container text-center">
-  <h1 class="text-center"> Topics </h1>
+    <h1 class="text-center">
+        Topics
+    </h1>
     <hr class="short-underline">
 
-<div class="topic-parent">
-  <% @topics.each do |topic| %>
-      <div class="topic-child text-center">
-      <%= image_tag topic.image, class: "img-settings img-responsive center-block" %>
-      <h2><%= topic.title %></h2>
-      <h4><%= topic.description %></h4>
-      <%= link_to topic.title, topic_posts_path(topic)%>
+    <div id="topics">
+        <% @topics.each do |topic| %>
+        <%= render partial: "topics/topic", locals: { topic: topic } %>
+        <% end %>
     </div>
-  <% end %>
-  </div>
 
-<%= button_to "Create Topic", new_topic_path, :method => :get %>
-<br>
+    <div class="topic-form-container">
+        <%= render partial: "topics/topic_form", locals: { topic: @topic } %>
+    </div>
+</div>
