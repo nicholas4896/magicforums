@@ -13,4 +13,9 @@
     <div class="topic-form-container">
         <%= render partial: "topics/topic_form", locals: { topic: @topic } %>
     </div>
+
+    <div id="pagination">
+      <%= paginate @topics %>
+    </div>
+
 </div>

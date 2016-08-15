@@ -1,16 +1,23 @@
-<div class="comment-index-container text-center">
+<div id="comment-partial-container" class="text-center">
     <h1>Comments</h1>
 
     <div id="comments">
-      <% @comments.each do |comment| %>
+        <% @comments.each do |comment| %>
         <%= render partial: "comments/comment", locals: { comment: comment, post: @post, topic: @topic } %>
-      <% end %>
+        <% end %>
     </div>
 
-    <div class="form-container">
-      <%= render partial: "comments/form", locals: { comment: @comment, post: @post } %>
-    </div>
 </div>
 
-<br>
-<%= button_to "Back to Post", topic_posts_path, :method => :get %>
+<div class="form-container">
+    <%= render partial: "comments/form", locals: { comment: @comment, post: @post } %>
+</div>
+
+<div id="paginate">
+    <%= paginate @comments %>
+</div>
+
+<div class="text-center">
+  <br>
+    <%= button_to "Back to Post", topic_posts_path, :method => :get %>
+</div>

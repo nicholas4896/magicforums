@@ -1,0 +1,6 @@
+$('#comment-<%= @comment.id %>').html("<%=j render partial: 'comments/edit', locals: { topic: @topic, comment: @comment, post: @post } %>")
+
+$('.cancel-button').on('click', function() {
+  $('#comment-partial-container').replaceWith("<%=j render partial: 'comments/comment', locals: {topic: @topic, comment: @comment, post: @post } %>")
+
+})
