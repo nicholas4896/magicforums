@@ -24,6 +24,7 @@ class CommentsController < ApplicationController
     authorize @comment
 
     if @comment.save
+      CommentBroadcastJob.perform_later("create", @comment)
       flash.now[:success] = "You've created a new comment."
     else
       flash.now[:danger] = @comment.errors.full_messages

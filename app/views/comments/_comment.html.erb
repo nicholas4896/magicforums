@@ -1,6 +1,15 @@
-<div class="text-center" id="comment-<%=comment.id%>">
+<div class="comment text-center" data-id="<%=comment.id%>">
   <%= image_tag comment.image, class: "img-responsive" %>
   <h4><%= comment.body %><h4>
-  <%= button_to "Edit Comment", edit_topic_post_comment_path(post.topic, post, comment), remote: true, :method => :get %>
-  <%= link_to ('Delete Comment'), topic_post_comment_path(post.topic, post, comment), remote: true, method: :delete, data: { confirm: "Delete Comment?"}, :class => 'btn btn-primary btn-;g'%>
+
+    <div class="control-panel">
+      <% if comment.user == current_user %>
+        <%= link_to "Edit Comment", edit_topic_post_comment_path(post.topic, post, comment), remote: true, class: 'btn btn-secondary' %>
+      <% end %>
+
+      <% if comment.user == current_user || current_user&.admin? || current_user&.moderator? %>
+        <%= link_to ('Delete Comment'), topic_post_comment_path(post.topic, post, comment), remote: true, method: :delete, data: { confirm: "Delete Comment?"}, :class => 'btn btn-primary btn-;g'%>
+      <% end %>
+    </div>
+
 </div>

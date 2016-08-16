@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount ActionCable.server => '/cable'
 
   root to: 'landing#index'
 
@@ -15,6 +16,7 @@ resources :users, only: [:new, :edit, :create, :update]
 resources :sessions, only: [:new, :create, :destroy]
 
 resources :password_resets, only: [:new, :create, :edit, :update]
+
 #get :topics, to: 'topics#index'
 
 #resources :posts

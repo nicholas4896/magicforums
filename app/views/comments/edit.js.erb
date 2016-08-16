@@ -1,6 +1,7 @@
-$('#comment-<%= @comment.id %>').html("<%=j render partial: 'comments/edit', locals: { topic: @topic, comment: @comment, post: @post } %>")
+$('.comment[data-id=<%= @comment.id %>]').html("<%=j render partial: 'comments/edit', locals: { topic: @topic, comment: @comment, post: @post } %>")
+console.log("hi")
 
 $('.cancel-button').on('click', function() {
-  $('#comment-partial-container').replaceWith("<%=j render partial: 'comments/comment', locals: {topic: @topic, comment: @comment, post: @post } %>")
+  $('#comment-partial-container').replaceWith("<%=j render partial: 'comments/comment', locals: {topic: @topic, comment: @comment, post: @post, extra_class: "" } %>")
 
 })

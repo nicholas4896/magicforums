@@ -34,6 +34,7 @@ gem 'pundit'
 gem 'responders'
 gem 'remotipart', github: 'sr3d/remotipart'
 gem 'kaminari'
+gem 'redis', '~>3.2'
 
 group :production do
   gem 'rails_12factor'
