@@ -4,6 +4,5 @@ class Comment < ApplicationRecord
   belongs_to :user
   validates :body, length: { minimum: 5 }, presence: true
   paginates_per 3
-  #max_paginates_per 3
 
 end

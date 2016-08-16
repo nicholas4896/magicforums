@@ -1,4 +1,4 @@
-<div class="post-index-container text-center">
+<div id="post-index-container" data-id="<%= @post.id %>" class="text-center">
     <h1 class="text-center" /h1><%= @topic.title%>
       <hr class="short-underline">
       <h1>Posts</h1>
@@ -10,17 +10,18 @@
       <% end %>
     </div>
 
-    <div class="post-form-container">
-      <%= render partial: "posts/post_form", locals: { post: @post } %>
-    </div>
+</div>
 
-    <div id="pagination">
-      <%= paginate @posts %>
-    </div>
+<div class="post-form-container">
+  <%= render partial: "posts/post_form", locals: { post: @post } %>
+</div>
 
+<div id="pagination">
+  <%= paginate @posts %>
 </div>
 
 <br>
+
   <div class="text-center">
       <br>
       <%= button_to "Back to Topics", topics_path, :method => :get %>

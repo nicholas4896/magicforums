@@ -3,7 +3,6 @@ postsChannelFunctions = () ->
   checkMe = (comment_id, username) ->
     unless $('meta[name=admin]').length > 0 || $("meta[user=#{username}]").length > 0
       $(".comment[data-id=#{comment_id}] .control-panel").remove()
-    console.log("checkme:" + comment_id)
     $(".comment[data-id=#{comment_id}]").removeClass("hidden")
 
   if $('#comment-partial-container').length > 0

@@ -1,0 +1,6 @@
+$('.post-partial-container[data-id=<%= @post.id %>]').html("<%=j render partial: 'posts/edit', locals: { topic: @topic, post: @post } %>")
+
+$('.cancel-button').on('click', function() {
+  $('#post-index-container').replaceWith("<%=j render partial: 'posts/post', locals: {topic: @topic, post: @post } %>")
+
+})

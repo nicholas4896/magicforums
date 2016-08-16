@@ -1,4 +1,4 @@
-<div class="post-form-container">
+<div id="post-form-container">
   <%= form_for(post, url: topic_posts_path, method: :post, authenticity_token: true, remote: true, html: { id: "post-create-form", multipart: true }) do |f| %>
     <h1 class="text-center">
       Create Post
@@ -22,4 +22,5 @@
       <%= f.submit "Create Post", class: "btn btn-success btn-lg" %>
     </div>
   <% end %>
+
 </div>

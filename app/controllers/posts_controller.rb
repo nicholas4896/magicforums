@@ -8,28 +8,22 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-#  def show
-#    @post = Post.find_by(id: params[:id])
+#  def new
+#    @topic = Topic.find_by(id: params[:topic_id])
+#    @post = Post.new
+#    authorize @post
 #  end
-
-  def new
-    @topic = Topic.find_by(id: params[:topic_id])
-    @post = Post.new
-    authorize @post
-  end
 
   def create
     @topic = Topic.find_by(id: params[:topic_id])
     @post = current_user.posts.build(post_params.merge(topic_id: params[:topic_id]))
-    #@new_post = Post.new
+    @new_post = Post.new
     authorize @post
 
     if @post.save
-      flash[:success] = "You've created a new post."
-      redirect_to topic_posts_path(@topic)
+      flash.now[:success] = "You've created a new post."
     else
-      flash[:danger] = @post.errors.full_messages
-      redirect_to new_topic_path(@topic)
+      flash.now[:danger] = @post.errors.full_messages
     end
   end
 
@@ -46,13 +40,13 @@ class PostsController < ApplicationController
     authorize @post
 
     if @post.update(post_params)
-      flash[:success] = "You've updated the post."
+      flash.now[:success] = "You've updated the post."
       #redirect_to topic_posts_path(@topic, @post)
-      redirect_to $prevURL
+      #redirect_to $prevURL
     else
-      flash[:danger] = @post.errors.full_messages
+      flash.now[:danger] = @post.errors.full_messages
       #redirect_to new_topic_post_path
-      redirect_to edit_topic_post_path(@topic, @post)
+      #redirect_to edit_topic_post_path(@topic, @post)
     end
   end
 
@@ -62,8 +56,8 @@ class PostsController < ApplicationController
     authorize @post
 
     if @post.destroy
-      flash[:success] = "You've deleted the post."
-      redirect_to topic_posts_path(@topic)
+      flash.now[:success] = "You've deleted the post."
+    #  redirect_to topic_posts_path(@topic)
     end
   end
 
