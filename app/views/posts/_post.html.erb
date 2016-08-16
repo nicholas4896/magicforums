@@ -2,7 +2,7 @@
     <%= image_tag post.image, class: "img-settings img-responsive center-block" %>
     <h2><%= post.title %></h2>
     <h4><%= post.body %></h4>
-    <%= link_to post.title, topic_post_comments_path(topic, post), remote: true %>
+    <%= link_to post.title, topic_post_comments_path(topic, post) %>
     <br>
     <%= link_to "Edit Post", edit_topic_post_path(topic, post), remote: true, :class =>"btn btn-default" %>
     <%= link_to ('Delete Post'), topic_post_path(topic, post), remote: true, method: :delete, data: { confirm: "Delete Post?"}, :class => 'btn btn-primary btn-;g'%>
