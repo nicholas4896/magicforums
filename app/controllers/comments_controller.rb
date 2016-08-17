@@ -62,7 +62,7 @@ class CommentsController < ApplicationController
     authorize @comment
 
     if @comment.destroy
-      CommentBroadcastJob.perform_now("delete", @comment)
+      CommentBroadcastJob.perform_now("destroy", @comment)
       flash.now[:success] = "You've deleted the comment."
       #redirect_to topic_post_comments_path
     end
