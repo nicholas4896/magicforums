@@ -1,6 +1,10 @@
-<div class="text-center">
+<div class="topic-partial-container text-center" data-id="<%=topic.id%>">
     <%= image_tag topic.image, class: "img-settings img-responsive center-block" %>
     <h2><%= topic.title %></h2>
     <h4><%= topic.description %></h4>
     <%= link_to topic.title, topic_posts_path(topic)%>
+    <br>
+    <%= link_to "Edit Topic", edit_topic_path(topic), remote: true, :class =>"btn btn-default" %>
+    <%= link_to ('Delete Topic'), topic_path(topic), remote: true, method: :delete, data: { confirm: "Delete ?"}, :class => 'btn btn-primary btn-;g'%>
+
 </div>

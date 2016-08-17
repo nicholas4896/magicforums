@@ -6,5 +6,8 @@ class User < ApplicationRecord
   has_many :topics
   has_many :comments
 
+  #validates :email, presence: true
+  #validates :password, presence: true
+
   enum role: [:user, :moderator, :admin]
 end

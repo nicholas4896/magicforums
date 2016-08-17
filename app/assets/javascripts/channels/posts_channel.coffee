@@ -10,10 +10,10 @@ postsChannelFunctions = () ->
       channel: "PostsChannel"
     },
     connected: () ->
-      #console.log("user logged in");
+
 
     disconnected: () ->
-      #console.log("user logged out");
+
 
     received: (data) ->
       if $('#comment-partial-container').data().id == data.post.id

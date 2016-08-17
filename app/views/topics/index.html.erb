@@ -1,4 +1,4 @@
-<div class="topic-container text-center">
+<div id="topic-index-container" data-id="<%= @topic.id %>" class="text-center">
     <h1 class="text-center">
         Topics
     </h1>
@@ -10,12 +10,12 @@
         <% end %>
     </div>
 
-    <div class="topic-form-container">
-        <%= render partial: "topics/topic_form", locals: { topic: @topic } %>
-    </div>
-
-    <div id="pagination">
-      <%= paginate @topics %>
-    </div>
-
 </div>
+
+  <div class="topic-form-container">
+      <%= render partial: "topics/topic_form", locals: { topic: @topic } %>
+  </div>
+
+  <div id="pagination">
+      <%= paginate @topics %>
+  </div>
