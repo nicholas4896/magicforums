@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
 
   def new
-    @user = User.find_by(id: params[:user_id])
+    @user = User.friendly.find(params[:user_id])
     @user = User.new
   end
 
   def create
-    @user = User.find_by(id: params[:user_id])
+    @user = User.friendly.find(params[:user_id])
     @user = User.new(user_params)
 
     if @user.save
@@ -19,13 +19,13 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find_by(id: params[:id])
+    @user = User.friendly.find(params[:id])
 
   end
 
   def update
-    @user = User.find_by(id: params[:user_id])
-    @user = User.find_by(id: params[:id])
+    @user = User.friendly.find(params[:user_id])
+    @user = User.friendly.find(params[:id])
 
     if @user.update(user_params)
       flash[:success] = "You've updated the user."

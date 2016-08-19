@@ -6,5 +6,7 @@
     <br>
     <%= link_to "Edit Topic", edit_topic_path(topic), remote: true, :class =>"btn btn-default" %>
     <%= link_to ('Delete Topic'), topic_path(topic), remote: true, method: :delete, data: { confirm: "Delete ?"}, :class => 'btn btn-primary btn-;g'%>
+    <br>
+    <%=link_to "Posted by #{topic.user.username} at #{topic.created_at}", root_path, class: 'topic-detail' %>
 
 </div>

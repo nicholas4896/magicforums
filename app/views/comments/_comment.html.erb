@@ -12,4 +12,19 @@
       <% end %>
     </div>
 
+    <div class="comment-vote-container">
+         <div class="comment-vote">
+           <%= link_to "Upvote", upvote_path({ comment_id: comment.id }), method: :post, remote: true%>
+           <%= link_to "Downvote", downvote_path({ comment_id: comment.id }), method: :post, remote: true%>
+         </div>
+
+         <div class="comment-total-votes">
+           <%=comment.total_votes%>
+         </div>
+
+     </div>
+
+     <br>
+     <%=link_to "Posted by #{comment.user.username} at #{comment.created_at}", root_path, class: 'comment-detail' %>
+
 </div>

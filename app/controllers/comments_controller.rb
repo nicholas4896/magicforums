@@ -3,8 +3,8 @@ class CommentsController < ApplicationController
   before_action :authenticate!, only: [:create, :edit, :update, :new, :destroy]
 
   def index
-    @topic = Topic.includes(:posts).find_by(id: params[:topic_id])
-    @post = @topic.posts.find_by(id: params[:post_id])
+    @topic = Topic.includes(:posts).friendly.find(params[:topic_id])
+    @post = @topic.posts.friendly.find(params[:post_id])
     @comments = @post.comments.order("created_at DESC").page (params[:page])
     @comment = Comment.new
   end
@@ -17,9 +17,9 @@ class CommentsController < ApplicationController
   #end
 
   def create
-    @topic = Topic.find_by(id: params[:topic_id])
-    @post = @topic.posts.find_by(id: params[:post_id])
-    @comment = current_user.comments.build(comment_params.merge(post_id: params[:post_id]))
+    @topic = Topic.friendly.find(params[:topic_id])
+    @post = @topic.posts.friendly.find(params[:post_id])
+    @comment = current_user.comments.build(comment_params.merge(post_id: @post.id))
     @new_comment = Comment.new
     authorize @comment
 
