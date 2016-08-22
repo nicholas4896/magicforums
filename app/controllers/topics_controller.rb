@@ -5,6 +5,7 @@ class TopicsController < ApplicationController
   def index
     @topics = Topic.all.order(created_at: :desc).page (params[:page])
     @topic =Topic.new
+    # binding.pry
   end
 
   def create

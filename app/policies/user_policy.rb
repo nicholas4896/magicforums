@@ -1,18 +1,20 @@
-class CommentPolicy < ApplicationPolicy
+class UserPolicy < ApplicationPolicy
 
   def new?
-    user.present? && user.admin?
+    # user.present?
+  end
 
   def edit?
-    user.present? && record.user == user || user_has_power?
+    # binding.pry
+    user.present? && (record == user || user_has_power?)
   end
 
   def update?
-    new?
+    edit?
   end
 
   def destroy?
-    new?
+    edit?
   end
 
   private

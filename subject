@@ -1,0 +1,440 @@
+=> [32m#<UsersController:0x00000005d8c408[0m
+ @_action_has_layout[32m=[0m[1;36mtrue[0m,
+ @_action_name[32m=[0m[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m,
+ @_config[32m=[0m{},
+ @_lookup_context[32m=[0m
+  [32m#<ActionView::LookupContext:0x00000005d84b68[0m
+   @cache[32m=[0m[1;36mtrue[0m,
+   @details[32m=[0m
+    {[33m:locale[0m=>[[33m:en[0m],
+     [33m:formats[0m=>[[33m:html[0m],
+     [33m:variants[0m=>[],
+     [33m:handlers[0m=>[[33m:raw[0m, [33m:erb[0m, [33m:html[0m, [33m:builder[0m, [33m:ruby[0m, [33m:coffee[0m, [33m:jbuilder[0m]},
+   @details_key[32m=[0m[1;36mnil[0m,
+   @prefixes[32m=[0m[[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mapplication[1;31m"[0m[31m[0m],
+   @rendered_format[32m=[0m[1;36mnil[0m,
+   @view_paths[32m=[0m
+    [32m#<ActionView::PathSet:0x00000005d848e8[0m
+     @paths[32m=[0m
+      [[32m#<RSpec::Rails::ViewRendering::EmptyTemplateResolver::FileSystemResolver:0x000000064372f8[0m
+        @cache[32m=[0m[32m#<ActionView::Resolver::Cache:0x64372d0 keys=1 queries=0>[0m,
+        @path[32m=[0m[31m[1;31m"[0m[31m/home/nick4896/Documents/FSWD/magicforums/app/views[1;31m"[0m[31m[0m,
+        @pattern[32m=[0m
+         [31m[1;31m"[0m[31m:prefix/:action{.:locale,}{.:formats,}{+:variants,}{.:handlers,}[1;31m"[0m[31m[0m[32m>[0m,
+       [32m#<RSpec::Rails::ViewRendering::EmptyTemplateResolver::FileSystemResolver:0x00000006437078[0m
+        @cache[32m=[0m[32m#<ActionView::Resolver::Cache:0x6437050 keys=1 queries=0>[0m,
+        @path[32m=[0m
+         [31m[1;31m"[0m[31m/home/nick4896/.rvm/gems/ruby-2.3.1/gems/kaminari-0.17.0/app/views[1;31m"[0m[31m[0m,
+        @pattern[32m=[0m
+         [31m[1;31m"[0m[31m:prefix/:action{.:locale,}{.:formats,}{+:variants,}{.:handlers,}[1;31m"[0m[31m[0m[32m>[0m,
+       [32m#<RSpec::Rails::ViewRendering::EmptyTemplateResolver::FileSystemResolver:0x00000006436dd0[0m
+        @cache[32m=[0m[32m#<ActionView::Resolver::Cache:0x6436da8 keys=1 queries=0>[0m,
+        @path[32m=[0m[31m[1;31m"[0m[31m/home/nick4896/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views[1;31m"[0m[31m[0m,
+        @pattern[32m=[0m
+         [31m[1;31m"[0m[31m:prefix/:action{.:locale,}{.:formats,}{+:variants,}{.:handlers,}[1;31m"[0m[31m[0m[32m>[0m][32m>[0m[32m>[0m,
+ @_params[32m=[0m
+  <[1;34;4mActionController[0m::[1;34;4mParameters[0m {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=><[1;34;4mActionController[0m::[1;34;4mParameters[0m {[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m} [35mpermitted[0m: [1;36mfalse[0m>, [31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m4[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mcontroller[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31maction[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m} [35mpermitted[0m: [1;36mfalse[0m>,
+ @_pundit_policies[32m=[0m
+  {[32m#<User:0x00000005d260b8[0m
+    id: [1;34m4[0m,
+    created_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+    updated_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+    username: [31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m,
+    password_digest:
+     [31m[1;31m"[0m[31m$2a$04$WpIKCpoBC.RGhTarrDU2CuC8sG6ivJg3RKWwe4ER2Nzmwmy7eO6q2[1;31m"[0m[31m[0m,
+    email: [31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m,
+    image: [1;36mnil[0m,
+    role: [31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m,
+    password_reset_token: [1;36mnil[0m,
+    password_reset_at: [1;36mnil[0m,
+    slug: [31m[1;31m"[0m[31m1-52f0c7a7-9bff-419e-b3b2-97496d3909a4[1;31m"[0m[31m[0m[32m>[0m=>
+    [32m#<UserPolicy:0x00000005d259b0[0m
+     @record[32m=[0m
+      [32m#<User:0x00000005d260b8[0m
+       id: [1;34m4[0m,
+       created_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+       updated_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+       username: [31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m,
+       password_digest:
+        [31m[1;31m"[0m[31m$2a$04$WpIKCpoBC.RGhTarrDU2CuC8sG6ivJg3RKWwe4ER2Nzmwmy7eO6q2[1;31m"[0m[31m[0m,
+       email: [31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m,
+       image: [1;36mnil[0m,
+       role: [31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m,
+       password_reset_token: [1;36mnil[0m,
+       password_reset_at: [1;36mnil[0m,
+       slug: [31m[1;31m"[0m[31m1-52f0c7a7-9bff-419e-b3b2-97496d3909a4[1;31m"[0m[31m[0m[32m>[0m,
+     @user[32m=[0m
+      [32m#<User:0x00000005d5d0e0[0m
+       id: [1;34m4[0m,
+       created_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+       updated_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+       username: [31m[1;31m"[0m[31m1[1;31m"[0m[31m[0m,
+       password_digest:
+        [31m[1;31m"[0m[31m$2a$04$/kjRy6Za4LPdvhT6caSHROv32Pkl.UEpgnKYE9DQ0nONkHeTwGM0G[1;31m"[0m[31m[0m,
+       email: [31m[1;31m"[0m[31m1@gmail.com[1;31m"[0m[31m[0m,
+       image: [1;36mnil[0m,
+       role: [31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m,
+       password_reset_token: [1;36mnil[0m,
+       password_reset_at: [1;36mnil[0m,
+       slug: [31m[1;31m"[0m[31m1-52f0c7a7-9bff-419e-b3b2-97496d3909a4[1;31m"[0m[31m[0m[32m>[0m[32m>[0m},
+ @_pundit_policy_authorized[32m=[0m[1;36mtrue[0m,
+ @_request[32m=[0m
+  [32m#<ActionController::TestRequest:0x00000005d85018[0m
+   @custom_param_parsers[32m=[0m
+    {[33m:xml[0m=>
+      [32m#<Proc:0x00000005d84fc8@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_controller/test_case.rb:55 (lambda)>[0m},
+   @env[32m=[0m
+    {[31m[1;31m"[0m[31mrack.version[1;31m"[0m[31m[0m=>[[1;34m1[0m, [1;34m3[0m],
+     [31m[1;31m"[0m[31mrack.input[1;31m"[0m[31m[0m=>[32m#<StringIO:0x00000005d74538[0m[32m>[0m,
+     [31m[1;31m"[0m[31mrack.errors[1;31m"[0m[31m[0m=>[32m#<StringIO:0x00000001cec768[0m[32m>[0m,
+     [31m[1;31m"[0m[31mrack.multithread[1;31m"[0m[31m[0m=>[1;36mtrue[0m,
+     [31m[1;31m"[0m[31mrack.multiprocess[1;31m"[0m[31m[0m=>[1;36mtrue[0m,
+     [31m[1;31m"[0m[31mrack.run_once[1;31m"[0m[31m[0m=>[1;36mfalse[0m,
+     [31m[1;31m"[0m[31mREQUEST_METHOD[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mPATCH[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mSERVER_NAME[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mexample.org[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mSERVER_PORT[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m80[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mQUERY_STRING[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mrack.url_scheme[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mhttp[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mHTTPS[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31moff[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mSCRIPT_NAME[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mCONTENT_LENGTH[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m77[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mHTTP_HOST[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mtest.host[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mREMOTE_ADDR[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m0.0.0.0[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mHTTP_USER_AGENT[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mRails Testing[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction_dispatch.parameter_filter[1;31m"[0m[31m[0m=>[[33m:password[0m],
+     [31m[1;31m"[0m[31maction_dispatch.redirect_filter[1;31m"[0m[31m[0m=>[],
+     [31m[1;31m"[0m[31maction_dispatch.secret_token[1;31m"[0m[31m[0m=>[1;36mnil[0m,
+     [31m[1;31m"[0m[31maction_dispatch.secret_key_base[1;31m"[0m[31m[0m=>
+      [31m[1;31m"[0m[31ma0b7aa6f65ea70a12caf0826531b30a9dccd0ae686a043e831f50fae48f6a7031c17c906357e31e8c87b089054203e51b126d5d9e654bf58220d806610c885bd[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction_dispatch.show_exceptions[1;31m"[0m[31m[0m=>[1;36mfalse[0m,
+     [31m[1;31m"[0m[31maction_dispatch.show_detailed_exceptions[1;31m"[0m[31m[0m=>[1;36mtrue[0m,
+     [31m[1;31m"[0m[31maction_dispatch.logger[1;31m"[0m[31m[0m=>
+      [32m#<ActiveSupport::Logger:0x0000000324f768[0m
+       @default_formatter[32m=[0m
+        [32m#<Logger::Formatter:0x0000000324f650[0m @datetime_format[32m=[0m[1;36mnil[0m[32m>[0m,
+       @formatter[32m=[0m
+        [32m#<ActiveSupport::Logger::SimpleFormatter:0x000000066f30f0[0m
+         @datetime_format[32m=[0m[1;36mnil[0m,
+         @thread_key[32m=[0m[31m[1;31m"[0m[31mactivesupport_tagged_logging_tags:53975160[1;31m"[0m[31m[0m[32m>[0m,
+       @level[32m=[0m[1;34m0[0m,
+       @local_levels[32m=[0m
+        [32m#<Concurrent::Map:0x0000000324ee58 entries=0 default_proc=nil>[0m,
+       @logdev[32m=[0m
+        [32m#<Logger::LogDevice:0x0000000324f588[0m
+         @dev[32m=[0m[32m#<File:/home/nick4896/Documents/FSWD/magicforums/log/test.log>[0m,
+         @filename[32m=[0m[1;36mnil[0m,
+         @mon_count[32m=[0m[1;34m0[0m,
+         @mon_mutex[32m=[0m[32m#<Thread::Mutex:0x0000000324f448[0m[32m>[0m,
+         @mon_owner[32m=[0m[1;36mnil[0m,
+         @shift_age[32m=[0m[1;36mnil[0m,
+         @shift_size[32m=[0m[1;36mnil[0m[32m>[0m,
+       @progname[32m=[0m[1;36mnil[0m[32m>[0m,
+     [31m[1;31m"[0m[31maction_dispatch.backtrace_cleaner[1;31m"[0m[31m[0m=>
+      [32m#<Rails::BacktraceCleaner:0x00000006439bc0[0m
+       @filters[32m=[0m
+        [[32m#<Proc:0x000000064399e0@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:14>[0m,
+         [32m#<Proc:0x000000064399b8@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:15>[0m,
+         [32m#<Proc:0x00000006439940@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:16>[0m,
+         [32m#<Proc:0x00000006439300@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:29>[0m],
+       @root[32m=[0m[31m[1;31m"[0m[31m/home/nick4896/Documents/FSWD/magicforums/[1;31m"[0m[31m[0m,
+       @silencers[32m=[0m
+        [[32m#<Proc:0x00000006439288@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:19>[0m][32m>[0m,
+     [31m[1;31m"[0m[31maction_dispatch.key_generator[1;31m"[0m[31m[0m=>
+      [32m#<ActiveSupport::CachingKeyGenerator:0x000000067e3f28[0m
+       @cache_keys[32m=[0m[32m#<Concurrent::Map:0x000000067e3ed8 entries=1 default_proc=nil>[0m,
+       @key_generator[32m=[0m
+        [32m#<ActiveSupport::KeyGenerator:0x000000067e3f50[0m
+         @iterations[32m=[0m[1;34m1000[0m,
+         @secret[32m=[0m
+          [31m[1;31m"[0m[31ma0b7aa6f65ea70a12caf0826531b30a9dccd0ae686a043e831f50fae48f6a7031c17c906357e31e8c87b089054203e51b126d5d9e654bf58220d806610c885bd[1;31m"[0m[31m[0m[32m>[0m[32m>[0m,
+     [31m[1;31m"[0m[31maction_dispatch.http_auth_salt[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mhttp authentication[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction_dispatch.signed_cookie_salt[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31msigned cookie[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction_dispatch.encrypted_cookie_salt[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mencrypted cookie[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction_dispatch.encrypted_signed_cookie_salt[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31msigned encrypted cookie[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction_dispatch.cookies_serializer[1;31m"[0m[31m[0m=>[33m:json[0m,
+     [31m[1;31m"[0m[31maction_dispatch.cookies_digest[1;31m"[0m[31m[0m=>[1;36mnil[0m,
+     [31m[1;31m"[0m[31mrack.session[1;31m"[0m[31m[0m=>
+      {[31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m=>[1;34m4[0m, [31m[1;31m"[0m[31mflash[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31mdiscard[1;31m"[0m[31m[0m=>[], [31m[1;31m"[0m[31mflashes[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31mdanger[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mFriendly is reserved[1;31m"[0m[31m[0m]}}},
+     [31m[1;31m"[0m[31mrack.session.options[1;31m"[0m[31m[0m=>
+      {[33m:key[0m=>[31m[1;31m"[0m[31mrack.session[1;31m"[0m[31m[0m,
+       [33m:path[0m=>[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+       [33m:domain[0m=>[1;36mnil[0m,
+       [33m:expire_after[0m=>[1;36mnil[0m,
+       [33m:secure[0m=>[1;36mfalse[0m,
+       [33m:httponly[0m=>[1;36mtrue[0m,
+       [33m:defer[0m=>[1;36mfalse[0m,
+       [33m:renew[0m=>[1;36mfalse[0m,
+       [33m:sidbits[0m=>[1;34m128[0m,
+       [33m:cookie_only[0m=>[1;36mtrue[0m,
+       [33m:secure_random[0m=>[1;34;4mSecureRandom[0m},
+     [31m[1;31m"[0m[31mCONTENT_TYPE[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mapplication/x-www-form-urlencoded[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction_dispatch.request.content_type[1;31m"[0m[31m[0m=>
+      [32m#<Mime::Type:0x000000042eb860[0m
+       @hash[32m=[0m[1;34m63635213213919221[0m,
+       @string[32m=[0m[31m[1;31m"[0m[31mapplication/x-www-form-urlencoded[1;31m"[0m[31m[0m,
+       @symbol[32m=[0m[33m:url_encoded_form[0m,
+       @synonyms[32m=[0m[][32m>[0m,
+     [31m[1;31m"[0m[31mPATH_INFO[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m/users/4[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction_dispatch.request.path_parameters[1;31m"[0m[31m[0m=>
+      {[33m:id[0m=>[31m[1;31m"[0m[31m4[1;31m"[0m[31m[0m, [33m:controller[0m=>[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m},
+     [31m[1;31m"[0m[31maction_dispatch.request.flash_hash[1;31m"[0m[31m[0m=>
+      [32m#<ActionDispatch::Flash::FlashHash:0x00000005ca6958[0m
+       @discard[32m=[0m[32m#<Set: {[0m}>,
+       @flashes[32m=[0m{[31m[1;31m"[0m[31mdanger[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mFriendly is reserved[1;31m"[0m[31m[0m]},
+       @now[32m=[0m[1;36mnil[0m[32m>[0m,
+     [31m[1;31m"[0m[31maction_controller.instance[1;31m"[0m[31m[0m=>[32m#<UsersController:0x00000005d8c408[0m ...[32m>[0m,
+     [31m[1;31m"[0m[31mrack.tempfiles[1;31m"[0m[31m[0m=>[],
+     [31m[1;31m"[0m[31mrack.request.form_hash[1;31m"[0m[31m[0m=>
+      {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m}},
+     [31m[1;31m"[0m[31mrack.request.form_vars[1;31m"[0m[31m[0m=>
+      [31m[1;31m"[0m[31muser%5Bemail%5D=new%40gmail.com&user%5Bpassword%5D=new&user%5Busername%5D=new[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mrack.request.form_input[1;31m"[0m[31m[0m=>[32m#<StringIO:0x00000005d74538[0m[32m>[0m,
+     [31m[1;31m"[0m[31maction_dispatch.request.request_parameters[1;31m"[0m[31m[0m=>
+      {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m}},
+     [31m[1;31m"[0m[31mrack.request.query_string[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mrack.request.query_hash[1;31m"[0m[31m[0m=>{},
+     [31m[1;31m"[0m[31maction_dispatch.request.query_parameters[1;31m"[0m[31m[0m=>{},
+     [31m[1;31m"[0m[31maction_dispatch.request.parameters[1;31m"[0m[31m[0m=>
+      {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m},
+       [31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m4[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mcontroller[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m},
+     [31m[1;31m"[0m[31maction_dispatch.request.formats[1;31m"[0m[31m[0m=>
+      [[32m#<Mime::Type:0x000000042ef0f0[0m
+        @hash[32m=[0m[1;34m2626390468441223392[0m,
+        @string[32m=[0m[31m[1;31m"[0m[31mtext/html[1;31m"[0m[31m[0m,
+        @symbol[32m=[0m[33m:html[0m,
+        @synonyms[32m=[0m[[31m[1;31m"[0m[31mapplication/xhtml+xml[1;31m"[0m[31m[0m][32m>[0m]},
+   @filtered_env[32m=[0m[1;36mnil[0m,
+   @filtered_parameters[32m=[0m
+    {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=>
+      {[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[FILTERED][1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m},
+     [31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m4[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mcontroller[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31maction[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m},
+   @filtered_path[32m=[0m[1;36mnil[0m,
+   @fullpath[32m=[0m[31m[1;31m"[0m[31m/users/4[1;31m"[0m[31m[0m,
+   @headers[32m=[0m
+    [32m#<ActionDispatch::Http::Headers:0x00000005d68e90[0m
+     @req[32m=[0m[32m#<ActionController::TestRequest:0x00000005d85018[0m ...[32m>[0m[32m>[0m,
+   @ip[32m=[0m[1;36mnil[0m,
+   @method[32m=[0m[1;36mnil[0m,
+   @original_fullpath[32m=[0m[1;36mnil[0m,
+   @port[32m=[0m[1;34m80[0m,
+   @protocol[32m=[0m[31m[1;31m"[0m[31mhttp://[1;31m"[0m[31m[0m,
+   @remote_ip[32m=[0m[1;36mnil[0m,
+   @request_method[32m=[0m[31m[1;31m"[0m[31mPATCH[1;31m"[0m[31m[0m[32m>[0m,
+ @_response[32m=[0m
+  [32m#<ActionDispatch::TestResponse:0x00000005d84eb0[0m
+   @cache_control[32m=[0m{},
+   @committed[32m=[0m[1;36mtrue[0m,
+   @cv[32m=[0m
+    [32m#<MonitorMixin::ConditionVariable:0x00000005d84d70[0m
+     @cond[32m=[0m[32m#<Thread::ConditionVariable:0x00000005d84d48[0m[32m>[0m,
+     @monitor[32m=[0m[32m#<ActionDispatch::TestResponse:0x00000005d84eb0[0m ...[32m>[0m[32m>[0m,
+   @header[32m=[0m
+    {[31m[1;31m"[0m[31mX-Frame-Options[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mSAMEORIGIN[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mX-XSS-Protection[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m1; mode=block[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mX-Content-Type-Options[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnosniff[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mLocation[1;31m"[0m[31m[0m=>
+      [31m[1;31m"[0m[31mhttp://test.host/users/1-52f0c7a7-9bff-419e-b3b2-97496d3909a4/edit[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mContent-Type[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mtext/html; charset=utf-8[1;31m"[0m[31m[0m},
+   @mon_count[32m=[0m[1;34m0[0m,
+   @mon_mutex[32m=[0m[32m#<Thread::Mutex:0x00000005d84e38[0m[32m>[0m,
+   @mon_owner[32m=[0m[1;36mnil[0m,
+   @request[32m=[0m
+    [32m#<ActionController::TestRequest:0x00000005d85018[0m
+     @custom_param_parsers[32m=[0m
+      {[33m:xml[0m=>
+        [32m#<Proc:0x00000005d84fc8@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_controller/test_case.rb:55 (lambda)>[0m},
+     @env[32m=[0m
+      {[31m[1;31m"[0m[31mrack.version[1;31m"[0m[31m[0m=>[[1;34m1[0m, [1;34m3[0m],
+       [31m[1;31m"[0m[31mrack.input[1;31m"[0m[31m[0m=>[32m#<StringIO:0x00000005d74538[0m[32m>[0m,
+       [31m[1;31m"[0m[31mrack.errors[1;31m"[0m[31m[0m=>[32m#<StringIO:0x00000001cec768[0m[32m>[0m,
+       [31m[1;31m"[0m[31mrack.multithread[1;31m"[0m[31m[0m=>[1;36mtrue[0m,
+       [31m[1;31m"[0m[31mrack.multiprocess[1;31m"[0m[31m[0m=>[1;36mtrue[0m,
+       [31m[1;31m"[0m[31mrack.run_once[1;31m"[0m[31m[0m=>[1;36mfalse[0m,
+       [31m[1;31m"[0m[31mREQUEST_METHOD[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mPATCH[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mSERVER_NAME[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mexample.org[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mSERVER_PORT[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m80[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mQUERY_STRING[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mrack.url_scheme[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mhttp[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mHTTPS[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31moff[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mSCRIPT_NAME[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mCONTENT_LENGTH[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m77[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mHTTP_HOST[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mtest.host[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mREMOTE_ADDR[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m0.0.0.0[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mHTTP_USER_AGENT[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mRails Testing[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction_dispatch.parameter_filter[1;31m"[0m[31m[0m=>[[33m:password[0m],
+       [31m[1;31m"[0m[31maction_dispatch.redirect_filter[1;31m"[0m[31m[0m=>[],
+       [31m[1;31m"[0m[31maction_dispatch.secret_token[1;31m"[0m[31m[0m=>[1;36mnil[0m,
+       [31m[1;31m"[0m[31maction_dispatch.secret_key_base[1;31m"[0m[31m[0m=>
+        [31m[1;31m"[0m[31ma0b7aa6f65ea70a12caf0826531b30a9dccd0ae686a043e831f50fae48f6a7031c17c906357e31e8c87b089054203e51b126d5d9e654bf58220d806610c885bd[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction_dispatch.show_exceptions[1;31m"[0m[31m[0m=>[1;36mfalse[0m,
+       [31m[1;31m"[0m[31maction_dispatch.show_detailed_exceptions[1;31m"[0m[31m[0m=>[1;36mtrue[0m,
+       [31m[1;31m"[0m[31maction_dispatch.logger[1;31m"[0m[31m[0m=>
+        [32m#<ActiveSupport::Logger:0x0000000324f768[0m
+         @default_formatter[32m=[0m
+          [32m#<Logger::Formatter:0x0000000324f650[0m @datetime_format[32m=[0m[1;36mnil[0m[32m>[0m,
+         @formatter[32m=[0m
+          [32m#<ActiveSupport::Logger::SimpleFormatter:0x000000066f30f0[0m
+           @datetime_format[32m=[0m[1;36mnil[0m,
+           @thread_key[32m=[0m[31m[1;31m"[0m[31mactivesupport_tagged_logging_tags:53975160[1;31m"[0m[31m[0m[32m>[0m,
+         @level[32m=[0m[1;34m0[0m,
+         @local_levels[32m=[0m
+          [32m#<Concurrent::Map:0x0000000324ee58 entries=0 default_proc=nil>[0m,
+         @logdev[32m=[0m
+          [32m#<Logger::LogDevice:0x0000000324f588[0m
+           @dev[32m=[0m[32m#<File:/home/nick4896/Documents/FSWD/magicforums/log/test.log>[0m,
+           @filename[32m=[0m[1;36mnil[0m,
+           @mon_count[32m=[0m[1;34m0[0m,
+           @mon_mutex[32m=[0m[32m#<Thread::Mutex:0x0000000324f448[0m[32m>[0m,
+           @mon_owner[32m=[0m[1;36mnil[0m,
+           @shift_age[32m=[0m[1;36mnil[0m,
+           @shift_size[32m=[0m[1;36mnil[0m[32m>[0m,
+         @progname[32m=[0m[1;36mnil[0m[32m>[0m,
+       [31m[1;31m"[0m[31maction_dispatch.backtrace_cleaner[1;31m"[0m[31m[0m=>
+        [32m#<Rails::BacktraceCleaner:0x00000006439bc0[0m
+         @filters[32m=[0m
+          [[32m#<Proc:0x000000064399e0@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:14>[0m,
+           [32m#<Proc:0x000000064399b8@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:15>[0m,
+           [32m#<Proc:0x00000006439940@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:16>[0m,
+           [32m#<Proc:0x00000006439300@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:29>[0m],
+         @root[32m=[0m[31m[1;31m"[0m[31m/home/nick4896/Documents/FSWD/magicforums/[1;31m"[0m[31m[0m,
+         @silencers[32m=[0m
+          [[32m#<Proc:0x00000006439288@/home/nick4896/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0/lib/rails/backtrace_cleaner.rb:19>[0m][32m>[0m,
+       [31m[1;31m"[0m[31maction_dispatch.key_generator[1;31m"[0m[31m[0m=>
+        [32m#<ActiveSupport::CachingKeyGenerator:0x000000067e3f28[0m
+         @cache_keys[32m=[0m
+          [32m#<Concurrent::Map:0x000000067e3ed8 entries=1 default_proc=nil>[0m,
+         @key_generator[32m=[0m
+          [32m#<ActiveSupport::KeyGenerator:0x000000067e3f50[0m
+           @iterations[32m=[0m[1;34m1000[0m,
+           @secret[32m=[0m
+            [31m[1;31m"[0m[31ma0b7aa6f65ea70a12caf0826531b30a9dccd0ae686a043e831f50fae48f6a7031c17c906357e31e8c87b089054203e51b126d5d9e654bf58220d806610c885bd[1;31m"[0m[31m[0m[32m>[0m[32m>[0m,
+       [31m[1;31m"[0m[31maction_dispatch.http_auth_salt[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mhttp authentication[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction_dispatch.signed_cookie_salt[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31msigned cookie[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction_dispatch.encrypted_cookie_salt[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mencrypted cookie[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction_dispatch.encrypted_signed_cookie_salt[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31msigned encrypted cookie[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction_dispatch.cookies_serializer[1;31m"[0m[31m[0m=>[33m:json[0m,
+       [31m[1;31m"[0m[31maction_dispatch.cookies_digest[1;31m"[0m[31m[0m=>[1;36mnil[0m,
+       [31m[1;31m"[0m[31mrack.session[1;31m"[0m[31m[0m=>
+        {[31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m=>[1;34m4[0m, [31m[1;31m"[0m[31mflash[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31mdiscard[1;31m"[0m[31m[0m=>[], [31m[1;31m"[0m[31mflashes[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31mdanger[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mFriendly is reserved[1;31m"[0m[31m[0m]}}},
+       [31m[1;31m"[0m[31mrack.session.options[1;31m"[0m[31m[0m=>
+        {[33m:key[0m=>[31m[1;31m"[0m[31mrack.session[1;31m"[0m[31m[0m,
+         [33m:path[0m=>[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+         [33m:domain[0m=>[1;36mnil[0m,
+         [33m:expire_after[0m=>[1;36mnil[0m,
+         [33m:secure[0m=>[1;36mfalse[0m,
+         [33m:httponly[0m=>[1;36mtrue[0m,
+         [33m:defer[0m=>[1;36mfalse[0m,
+         [33m:renew[0m=>[1;36mfalse[0m,
+         [33m:sidbits[0m=>[1;34m128[0m,
+         [33m:cookie_only[0m=>[1;36mtrue[0m,
+         [33m:secure_random[0m=>[1;34;4mSecureRandom[0m},
+       [31m[1;31m"[0m[31mCONTENT_TYPE[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mapplication/x-www-form-urlencoded[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction_dispatch.request.content_type[1;31m"[0m[31m[0m=>
+        [32m#<Mime::Type:0x000000042eb860[0m
+         @hash[32m=[0m[1;34m63635213213919221[0m,
+         @string[32m=[0m[31m[1;31m"[0m[31mapplication/x-www-form-urlencoded[1;31m"[0m[31m[0m,
+         @symbol[32m=[0m[33m:url_encoded_form[0m,
+         @synonyms[32m=[0m[][32m>[0m,
+       [31m[1;31m"[0m[31mPATH_INFO[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m/users/4[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction_dispatch.request.path_parameters[1;31m"[0m[31m[0m=>
+        {[33m:id[0m=>[31m[1;31m"[0m[31m4[1;31m"[0m[31m[0m, [33m:controller[0m=>[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m},
+       [31m[1;31m"[0m[31maction_dispatch.request.flash_hash[1;31m"[0m[31m[0m=>
+        [32m#<ActionDispatch::Flash::FlashHash:0x00000005ca6958[0m
+         @discard[32m=[0m[32m#<Set: {[0m}>,
+         @flashes[32m=[0m{[31m[1;31m"[0m[31mdanger[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mFriendly is reserved[1;31m"[0m[31m[0m]},
+         @now[32m=[0m[1;36mnil[0m[32m>[0m,
+       [31m[1;31m"[0m[31maction_controller.instance[1;31m"[0m[31m[0m=>[32m#<UsersController:0x00000005d8c408[0m ...[32m>[0m,
+       [31m[1;31m"[0m[31mrack.tempfiles[1;31m"[0m[31m[0m=>[],
+       [31m[1;31m"[0m[31mrack.request.form_hash[1;31m"[0m[31m[0m=>
+        {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=>
+          {[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m}},
+       [31m[1;31m"[0m[31mrack.request.form_vars[1;31m"[0m[31m[0m=>
+        [31m[1;31m"[0m[31muser%5Bemail%5D=new%40gmail.com&user%5Bpassword%5D=new&user%5Busername%5D=new[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mrack.request.form_input[1;31m"[0m[31m[0m=>[32m#<StringIO:0x00000005d74538[0m[32m>[0m,
+       [31m[1;31m"[0m[31maction_dispatch.request.request_parameters[1;31m"[0m[31m[0m=>
+        {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=>
+          {[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m}},
+       [31m[1;31m"[0m[31mrack.request.query_string[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mrack.request.query_hash[1;31m"[0m[31m[0m=>{},
+       [31m[1;31m"[0m[31maction_dispatch.request.query_parameters[1;31m"[0m[31m[0m=>{},
+       [31m[1;31m"[0m[31maction_dispatch.request.parameters[1;31m"[0m[31m[0m=>
+        {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m},
+         [31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m4[1;31m"[0m[31m[0m,
+         [31m[1;31m"[0m[31mcontroller[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m,
+         [31m[1;31m"[0m[31maction[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m},
+       [31m[1;31m"[0m[31maction_dispatch.request.formats[1;31m"[0m[31m[0m=>
+        [[32m#<Mime::Type:0x000000042ef0f0[0m
+          @hash[32m=[0m[1;34m2626390468441223392[0m,
+          @string[32m=[0m[31m[1;31m"[0m[31mtext/html[1;31m"[0m[31m[0m,
+          @symbol[32m=[0m[33m:html[0m,
+          @synonyms[32m=[0m[[31m[1;31m"[0m[31mapplication/xhtml+xml[1;31m"[0m[31m[0m][32m>[0m]},
+     @filtered_env[32m=[0m[1;36mnil[0m,
+     @filtered_parameters[32m=[0m
+      {[31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m=>
+        {[31m[1;31m"[0m[31memail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpassword[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[FILTERED][1;31m"[0m[31m[0m, [31m[1;31m"[0m[31musername[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m},
+       [31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m4[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mcontroller[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31maction[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m},
+     @filtered_path[32m=[0m[1;36mnil[0m,
+     @fullpath[32m=[0m[31m[1;31m"[0m[31m/users/4[1;31m"[0m[31m[0m,
+     @headers[32m=[0m
+      [32m#<ActionDispatch::Http::Headers:0x00000005d68e90[0m
+       @req[32m=[0m[32m#<ActionController::TestRequest:0x00000005d85018[0m ...[32m>[0m[32m>[0m,
+     @ip[32m=[0m[1;36mnil[0m,
+     @method[32m=[0m[1;36mnil[0m,
+     @original_fullpath[32m=[0m[1;36mnil[0m,
+     @port[32m=[0m[1;34m80[0m,
+     @protocol[32m=[0m[31m[1;31m"[0m[31mhttp://[1;31m"[0m[31m[0m,
+     @remote_ip[32m=[0m[1;36mnil[0m,
+     @request_method[32m=[0m[31m[1;31m"[0m[31mPATCH[1;31m"[0m[31m[0m[32m>[0m,
+   @sending[32m=[0m[1;36mfalse[0m,
+   @sent[32m=[0m[1;36mtrue[0m,
+   @status[32m=[0m[1;34m302[0m,
+   @stream[32m=[0m
+    [32m#<ActionDispatch::Response::Buffer:0x00000005ca75b0[0m
+     @buf[32m=[0m
+      [[31m[1;31m"[0m[31m<html><body>You are being <a href=[1;35m\"[0m[31mhttp://test.host/users/1-52f0c7a7-9bff-419e-b3b2-97496d3909a4/edit[1;35m\"[0m[31m>redirected</a>.</body></html>[1;31m"[0m[31m[0m],
+     @closed[32m=[0m[1;36mfalse[0m,
+     @response[32m=[0m[32m#<ActionDispatch::TestResponse:0x00000005d84eb0[0m ...[32m>[0m,
+     @str_body[32m=[0m[1;36mnil[0m[32m>[0m[32m>[0m,
+ @_response_body[32m=[0m
+  [[31m[1;31m"[0m[31m<html><body>You are being <a href=[1;35m\"[0m[31mhttp://test.host/users/1-52f0c7a7-9bff-419e-b3b2-97496d3909a4/edit[1;35m\"[0m[31m>redirected</a>.</body></html>[1;31m"[0m[31m[0m],
+ @_routes[32m=[0m[1;36mnil[0m,
+ @_url_options[32m=[0m
+  {[33m:host[0m=>[31m[1;31m"[0m[31mtest.host[1;31m"[0m[31m[0m,
+   [33m:port[0m=>[1;36mnil[0m,
+   [33m:protocol[0m=>[31m[1;31m"[0m[31mhttp://[1;31m"[0m[31m[0m,
+   [33m:_recall[0m=>{[33m:id[0m=>[31m[1;31m"[0m[31m4[1;31m"[0m[31m[0m, [33m:controller[0m=>[31m[1;31m"[0m[31musers[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mupdate[1;31m"[0m[31m[0m}},
+ @current_user[32m=[0m
+  [32m#<User:0x00000005d5d0e0[0m
+   id: [1;34m4[0m,
+   created_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+   updated_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+   username: [31m[1;31m"[0m[31m1[1;31m"[0m[31m[0m,
+   password_digest:
+    [31m[1;31m"[0m[31m$2a$04$/kjRy6Za4LPdvhT6caSHROv32Pkl.UEpgnKYE9DQ0nONkHeTwGM0G[1;31m"[0m[31m[0m,
+   email: [31m[1;31m"[0m[31m1@gmail.com[1;31m"[0m[31m[0m,
+   image: [1;36mnil[0m,
+   role: [31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m,
+   password_reset_token: [1;36mnil[0m,
+   password_reset_at: [1;36mnil[0m,
+   slug: [31m[1;31m"[0m[31m1-52f0c7a7-9bff-419e-b3b2-97496d3909a4[1;31m"[0m[31m[0m[32m>[0m,
+ @marked_for_same_origin_verification[32m=[0m[1;36mfalse[0m,
+ @user[32m=[0m
+  [32m#<User:0x00000005d260b8[0m
+   id: [1;34m4[0m,
+   created_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+   updated_at: [1;34;4mMon[0m, [1;34m22[0m [1;34;4mAug[0m [1;34m2016[0m [1;34m07[0m:[1;34m39[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+   username: [31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m,
+   password_digest:
+    [31m[1;31m"[0m[31m$2a$04$WpIKCpoBC.RGhTarrDU2CuC8sG6ivJg3RKWwe4ER2Nzmwmy7eO6q2[1;31m"[0m[31m[0m,
+   email: [31m[1;31m"[0m[31mnew@gmail.com[1;31m"[0m[31m[0m,
+   image: [1;36mnil[0m,
+   role: [31m[1;31m"[0m[31muser[1;31m"[0m[31m[0m,
+   password_reset_token: [1;36mnil[0m,
+   password_reset_at: [1;36mnil[0m,
+   slug: [31m[1;31m"[0m[31m1-52f0c7a7-9bff-419e-b3b2-97496d3909a4[1;31m"[0m[31m[0m[32m>[0m[32m>[0m

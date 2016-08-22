@@ -11,8 +11,8 @@ class User < ApplicationRecord
   friendly_id :username, use: [:slugged, :history]
 
   def should_generate_new_friendly_id?
-    title_changed? || slug.blank?
-  end  
+    username_changed? || slug.blank?
+  end
 
   #validates :email, presence: true
   #validates :password, presence: true
