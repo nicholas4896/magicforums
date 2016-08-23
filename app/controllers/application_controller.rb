@@ -18,8 +18,14 @@ class ApplicationController < ActionController::Base
 
    def authenticate!
     unless current_user
+      message = "You need to login first"
+      if request.format.html?
+        flash[:danger] = message
       redirect_to root_path
-        flash[:danger] = "You need to login first"
+    else
+      flash.now[:danger] = message
+      render "layouts/flash"
     end
   end
+end
 end

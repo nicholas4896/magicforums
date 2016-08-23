@@ -12,7 +12,6 @@ class TopicsController < ApplicationController
     @topic = current_user.topics.build(topic_params)
     @new_topic = Topic.new
     authorize @topic
-
     if @topic.save
       flash.now[:success] = "You've created a new topic."
     else
@@ -21,13 +20,13 @@ class TopicsController < ApplicationController
   end
 
   def edit
+    # binding.pry
     @topic = Topic.friendly.find(params[:id])
     authorize @topic
   end
 
   def update
     @topic = Topic.friendly.find(params[:id])
-    #binding.pry
     authorize @topic
     if @topic.update(topic_params)
       flash.now[:success] = "You've updated the topic."
@@ -41,6 +40,7 @@ class TopicsController < ApplicationController
     authorize @topic
     if @topic.destroy
       flash.now[:success] = "You've deleted the topic."
+      # binding.pry
     #else
     #  flash.now[:danger] = @topic.errors.full_messages
     end

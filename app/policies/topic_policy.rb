@@ -9,6 +9,7 @@ class TopicPolicy < ApplicationPolicy
   end
 
   def edit?
+    # binding.pry
     new?
   end
 

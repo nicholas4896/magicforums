@@ -83,7 +83,7 @@ RSpec.describe UsersController, type: :controller do
       patch :update, params: params, session: { id: @user.id }
       @user.reload
       current_user = subject.send(:current_user).reload
-
+# binding.pry
       expect(current_user.email).to eql("new@gmail.com")
       expect(current_user.username).to eql("new")
       expect(current_user.authenticate("new")).to eql(@user)
