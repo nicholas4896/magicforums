@@ -9,7 +9,8 @@ class PostPolicy < ApplicationPolicy
   end
 
   def edit?
-   user.present? && (record == user || user_has_power?)
+    # binding.pry
+   user.present? && (record.user == user || user_has_power?)
   end
 
   def update?

@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params.merge(topic_id: @topic.id))
     @new_post = Post.new
     authorize @post
-
+# binding.pry
     if @post.save
       flash.now[:success] = "You've created a new post."
     else
@@ -28,9 +28,9 @@ class PostsController < ApplicationController
   end
 
   def edit
+    # binding.pry
     @post = Post.friendly.find(params[:id])
     @topic = @post.topic
-    $prevURL = request.referer
     authorize @post
   end
 
