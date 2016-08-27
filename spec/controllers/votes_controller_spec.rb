@@ -3,12 +3,14 @@ require 'rails_helper'
 RSpec.describe VotesController, type: :controller do
 
   before(:all) do
-    @user = User.create(email: "a@mail.com", password: "a", username: "a", role: 2)
-    @user2 = User.create(email: "b@mail.com", password: "b", username: "b", role: 0)
-    @unauthorized_user = User.create(email: "c@mail.com", password: "c", username: "c", role: 0 )
-    @topic = Topic.create(title: "topic title", description: "topic description", user_id: @user.id)
-    @post = Post.create(title: "post title", body: "post body", topic_id: @topic.id, user_id: @user.id)
-    @comment = Comment.create(body:"comment body", post_id: @post.id, user_id: @user.id)
+    @user = create(:user, :sequenced_email, :sequenced_username)
+    @comment = create(:comment)
+    # @user = User.create(email: "a@mail.com", password: "a", username: "a", role: 2)
+    # @user2 = User.create(email: "b@mail.com", password: "b", username: "b", role: 0)
+    # @unauthorized_user = User.create(email: "c@mail.com", password: "c", username: "c", role: 0 )
+    # @topic = Topic.create(title: "topic title", description: "topic description", user_id: @user.id)
+    # @post = Post.create(title: "post title", body: "post body", topic_id: @topic.id, user_id: @user.id)
+    # @comment = Comment.create(body:"comment body", post_id: @post.id, user_id: @user.id)
   end
 
   describe "can't vote if not logged in" do
@@ -35,7 +37,7 @@ RSpec.describe VotesController, type: :controller do
     it "should upvote for user" do
 
       params = { comment_id: @comment.id }
-      post :upvote, xhr: true, params: params, session: {id: @user2.id}
+      post :upvote, xhr: true, params: params, session: {id: @user.id}
 
       expect(Vote.count).to eql(1)
       expect(flash[:success]).to eql("Upvoted")
@@ -43,11 +45,11 @@ RSpec.describe VotesController, type: :controller do
 
     it "shouldn't upvote more than once" do
 
-      @upvote = Vote.create(comment_id: @comment.id, user_id: @user2.id)
+      @upvote = Vote.create(comment_id: @comment.id, user_id: @user.id)
       expect(Vote.count).to eql(1)
 
       params = { comment_id: @comment.id }
-      post :upvote, xhr: true, params: params, session: { id: @user2.id }
+      post :upvote, xhr: true, params: params, session: { id: @user.id }
 
       expect(Vote.count).to eql(1)
     end
@@ -66,7 +68,7 @@ RSpec.describe VotesController, type: :controller do
     it "should downvote for user" do
 
       params = {comment_id: @comment.id}
-      post :downvote, xhr: true, params: params, session: {id: @user2.id}
+      post :downvote, xhr: true, params: params, session: {id: @user.id}
 # binding.pry
       expect(Vote.count).to eql(1)
       expect(flash[:success]).to eql("Downvoted")
@@ -74,11 +76,11 @@ RSpec.describe VotesController, type: :controller do
 
     it "shouldn't downvote more than once" do
 
-      @downvote = Vote.create(comment_id: @comment.id, user_id: @user2.id)
+      @downvote = Vote.create(comment_id: @comment.id, user_id: @user.id)
       expect(Vote.count).to eql(1)
 
       params = {comment_id: @comment.id}
-      post :downvote, xhr: true, params: params, session: {id: @user2.id}
+      post :downvote, xhr: true, params: params, session: {id: @user.id}
 
       expect(Vote.count).to eql(1)
     end

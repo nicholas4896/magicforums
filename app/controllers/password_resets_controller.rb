@@ -5,7 +5,7 @@ class PasswordResetsController < ApplicationController
 
     def create
       user = User.find_by(email: reset_password_params[:email])
-binding.pry
+# binding.pry
       if user
         user.update(password_reset_token: password_reset_token, password_reset_at: DateTime.now)
         PasswordResetsMailer.password_reset_mail(user).deliver_now
